@@ -1,4 +1,4 @@
-# Planing
+# Planning
 Aquí iremos actualizando el estado del proyecto y documentando.
 
 ## Montaje de la infraestructura.
