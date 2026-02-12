@@ -52,7 +52,7 @@ sudo systemctl status wazuh-dashboard
 ```
 
 Acceso web:
-- https://192.168.56.10:5601
+- https://soc.informatica.iesgrancapitan.org
 
 ---
 
