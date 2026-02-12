@@ -41,7 +41,7 @@ Guía oficial: https://documentation.wazuh.com/current/installation-guide/
 
 ```bash
 curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
-sudo bash wazuh-install.sh -a
+sudo bash wazuh-install.sh -a -i
 ```
 
 ### 2.3 Verificación
