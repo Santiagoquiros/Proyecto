@@ -10,5 +10,7 @@ Aquí iremos actualizando el estado del proyecto y documentando.
 ## Enlaces a documentos:
 
 - Documento principal: [Readme_soc_educativo](readme_soc_educativo_con_wazuh_y_elastic.md)
+- Gestión de claves y acceso al servidor: [Géstion técnica]()
 - Guia tecnica: [GuiaTecnica_administrador](guia_tecnica_del_administrador_preparacion_de_escenarios.md)
 - Actividades guiadas: [Actividades propuestas para el alumnaado](actividades_practicas_ataque_simulado_y_analisis_soc.md)
+
