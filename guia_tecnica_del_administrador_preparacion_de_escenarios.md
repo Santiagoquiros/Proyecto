@@ -121,6 +121,7 @@ Crear usuario débil (laboratorio):
 sudo useradd alumno
 sudo passwd alumno
 ```
+  - Contraseña: 1234
 
 **MITRE:** T1110 https://attack.mitre.org/techniques/T1110/
 
