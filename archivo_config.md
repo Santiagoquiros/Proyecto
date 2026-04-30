@@ -69,13 +69,11 @@ Configuración de red del cliente windows:
     ip: 10.68.0.163
     mascara: 255.0.0.0
     puerta de enlace: 10.0.0.8
-
     dns: 8.8.8.8 / 1.1.1.1
 
 Configuración de red del atacante kali:
     ip: 10.68.0.165
     mascara: 255.0.0.0
     puerta de enlace: 10.0.0.8
-
     dns: 8.8.8.8 / 1.1.1.1
 
