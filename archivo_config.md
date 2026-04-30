@@ -69,4 +69,5 @@ Configuración de red del cliente windows:
     dns: 8.8.8.8 / 1.1.1.1
 
 
-
+Configuración de alertas nivel alto con ejemplos:
+        [Alertas rule 8-15](https://medium.com/@faizanhaider1916/custom-wazuh-detection-rules-8d799be84d2d)
