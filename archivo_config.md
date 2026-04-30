@@ -32,6 +32,10 @@ Desde el propio servidor nos conectaremos via ssh a cada una de las maquinas:
 
     ssh usuario@10.68.0.163 -----> Root1234$
 
+    kali-atacante:
+
+    ssh kali@10.68.0.165 -----> Root1234$
+
 3. Configuración de red del servidor (cloud-init)
 
         network:
@@ -68,6 +72,10 @@ Configuración de red del cliente windows:
 
     dns: 8.8.8.8 / 1.1.1.1
 
+Configuración de red del atacante kali:
+    ip: 10.68.0.165
+    mascara: 255.0.0.0
+    puerta de enlace: 10.0.0.8
 
-Configuración de alertas nivel alto con ejemplos:
-        [Alertas rule 8-15](https://medium.com/@faizanhaider1916/custom-wazuh-detection-rules-8d799be84d2d)
+    dns: 8.8.8.8 / 1.1.1.1
+
