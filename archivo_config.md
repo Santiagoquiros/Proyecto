@@ -13,7 +13,7 @@ La guía está orientada a administradores, docentes y estudiantes que necesiten
 - Verificar conectividad entre sistemas.
 - Realizar tareas básicas de operación y mantenimiento.
 
----
+
 
 # Arquitectura general del laboratorio
 
@@ -24,7 +24,7 @@ La guía está orientada a administradores, docentes y estudiantes que necesiten
 | Windows-cliente | Equipo Windows monitorizado | 10.68.0.163 |
 | Kali-atacante | Máquina de pruebas ofensivas | 10.68.0.165 |
 
----
+
 
 # Acceso al Dashboard de Wazuh
 
@@ -50,7 +50,7 @@ https://wazuh.soc.informatica.iesgrancapitan.org/
 - Monitorización en tiempo real.
 - Correlación de eventos.
 
----
+
 
 # Acceso remoto al servidor SOC
 
@@ -76,7 +76,7 @@ ssh -p 9313 administrador@cpd.informatica.iesgrancapitan.org
 | administrador | Usuario remoto |
 | cpd.informatica.iesgrancapitan.org | Servidor remoto |
 
----
+
 
 # Acceso desde el servidor a las máquinas internas
 
@@ -99,7 +99,7 @@ ssh usuario@10.68.0.161
 
 Sistema Linux monitorizado por Wazuh para pruebas de seguridad y generación de logs.
 
----
+
 
 ## Windows-cliente
 
@@ -120,7 +120,7 @@ ssh usuario@10.68.0.163
 
 Equipo Windows destinado a la monitorización de eventos y pruebas de seguridad.
 
----
+
 
 ## Kali-atacante
 
@@ -141,7 +141,7 @@ ssh kali@10.68.0.165
 
 Máquina utilizada para simulación de ataques y pruebas ofensivas.
 
----
+
 
 # Configuración de red del servidor SOC
 
@@ -165,7 +165,7 @@ network:
 - Puerta de enlace centralizada.
 - Configuración mediante Netplan y cloud-init.
 
----
+
 
 # Configuración de red Ubuntu-cliente
 
@@ -185,7 +185,7 @@ network:
           - 1.1.1.1
 ```
 
----
+
 
 # Configuración de red Windows-cliente
 
@@ -196,7 +196,7 @@ network:
 | Gateway | 10.0.0.8 |
 | DNS | 8.8.8.8 / 1.1.1.1 |
 
----
+
 
 # Configuración de red Kali Linux
 
@@ -207,7 +207,7 @@ network:
 | Gateway | 10.0.0.8 |
 | DNS | 8.8.8.8 / 1.1.1.1 |
 
----
+
 
 # Comprobaciones básicas
 
@@ -231,7 +231,7 @@ ping 8.8.8.8
 ping google.com
 ```
 
----
+
 
 # Verificación de agentes Wazuh
 
@@ -249,7 +249,6 @@ Active
 - Alertas generadas.
 - Inventario del sistema.
 
----
 
 # Flujo de funcionamiento del laboratorio
 
@@ -260,18 +259,7 @@ Active
 5. El dashboard muestra alertas.
 6. El administrador revisa los incidentes.
 
----
 
-# Recomendaciones de seguridad
-
-- Cambiar contraseñas periódicamente.
-- No compartir credenciales.
-- Mantener sistemas actualizados.
-- Revisar logs regularmente.
-- Limitar acceso SSH.
-- Realizar copias de seguridad.
-
----
 
 # Resolución de problemas
 
@@ -297,7 +285,7 @@ Comprobar:
 - Conectividad con el servidor.
 - Configuración del agente.
 
----
+
 
 # Resumen de credenciales
 
@@ -309,7 +297,7 @@ Comprobar:
 | Windows cliente | usuario | Root1234$ |
 | Kali atacante | kali | Root1234$ |
 
----
+
 
 # Resumen de direcciones IP
 
@@ -320,7 +308,7 @@ Comprobar:
 | Windows-cliente | 10.68.0.163 |
 | Kali-atacante | 10.68.0.165 |
 
----
+
 
 # Conclusión
 
