@@ -297,7 +297,11 @@ Comprobar:
 | Windows cliente | usuario | Root1234$ |
 | Kali atacante | kali | Root1234$ |
 
+Credenciales del sistema Wazuh:
 
+PI Wazuh (puerto 55000)wazuh        Root1234$
+API Wazuh (interno)wazuh-wui            WazuhWui2026.
+Dashboard → Indexerkibanaserver         WazuhDashboard2026Secure
 
 # Resumen de direcciones IP
 
