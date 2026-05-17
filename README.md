@@ -18,7 +18,7 @@ Aquí iremos actualizando el estado del proyecto y documentando.
 
 # Documentación Definitiva
 
-[Link directorio](README.md)
+[Link directorio](SOC-educativo/README.md)
 
 - Esta a falta de revisar.
 - Falta subir scripts de ataques.
