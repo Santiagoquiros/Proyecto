@@ -1,0 +1,219 @@
+# Configuración del Proyecto SOC Educativo
+
+## Información del Proyecto
+project_name: "Implantación de un SOC Educativo con Wazuh + ELK"
+project_version: "1.0"
+creation_date: "Enero 2026"
+last_updated: "Enero 2026"
+
+## Equipo del Proyecto
+team:
+  - name: "Antonio Marinero Jabalera"
+    role: "Responsable de Wazuh"
+    email: "a24majaan@iesgrancapitan.org"
+  
+  - name: "Santiago Quirós Arenas"
+    role: "Responsable de ELK Stack"
+    email: "a24quarsa@iesgrancapitan.org"
+  
+  - name: "Mario Palacios Moreno"
+    role: "Responsable de Integración y Documentación"
+    email: "a24pamoma@iesgrancapitan.org"
+
+## Componentes del Sistema
+components:
+  wazuh:
+    version: "4.1 LTS"
+    components:
+      - wazuh-manager
+      - wazuh-agent
+      - wazuh-dashboard
+    ports:
+      manager: 1514  # TCP/UDP
+      auth: 1515     # TCP
+      cluster: 1516  # TCP
+      api: 55000     # HTTPS
+  
+  elasticsearch:
+    version: "7"
+    ports:
+      http: 9200
+      node_comm: 9300
+  
+  logstash:
+    version: "7"
+    ports:
+      input: 5000
+      output: 5001
+  
+  kibana:
+    version: "7"
+    ports:
+      http: 5601
+
+## Infraestructura Recomendada
+infrastructure:
+  server_central:
+    os: "Ubuntu Server 24.04 LTS"
+    cpu_cores: 4
+    ram_gb: 16
+    storage_gb: 200
+    network: "IP estática, gateway configurado"
+  
+  agents:
+    linux:
+      os: ["Ubuntu 22.04 LTS"]
+      ram_mb: 512
+      storage_mb: 500
+    
+    windows:
+      os: ["Windows 10 Pro"]
+      ram_mb: 1024
+      storage_mb: 1000
+
+## Directorio de Carpetas
+directories:
+  docs: "Documentación del proyecto (6 guías)"
+  agents: "Configuraciones de agentes Wazuh"
+  ansible: "Playbooks de automatización"
+  dashboards: "Exportaciones de dashboards Kibana"
+  scripts: "Scripts de instalación y utilidad"
+  tests: "Scripts de pruebas y simulación"
+  deliverables: "Entregables finales"
+
+## Fases del Proyecto
+phases:
+  fase_1:
+    name: "Planificación y diseño"
+    duration: "1 semana"
+    status: "Completada"
+  
+  fase_2:
+    name: "Montaje de infraestructura"
+    duration: "1-2 semanas"
+    status: "Completada"
+  
+  fase_3:
+    name: "Configuración de agentes y logs"
+    duration: "1-2 semanas"
+    status: "Completada"
+  
+  fase_4:
+    name: "Creación de reglas y alertas"
+    duration: "1 semana"
+    status: "Completada"
+  
+  fase_5:
+    name: "Visualización y dashboards"
+    duration: "1 semana"
+    status: "Completada"
+  
+  fase_6:
+    name: "Pruebas y simulación de incidentes"
+    duration: "1-2 semanas"
+    status: "Completada"
+  
+  fase_7:
+    name: "Documentación y presentación"
+    duration: "1 semana"
+    status: "Completada"
+
+## Objetivos Principales
+objectives:
+  - "Configurar servidor central ELK con Elasticsearch, Logstash, Kibana"
+  - "Integrar agentes Wazuh en sistemas Windows y Linux"
+  - "Configurar alertas automáticas de seguridad"
+  - "Crear dashboards de visualización didácticos"
+  - "Simular ataques controlados y documentar detección"
+  - "Documentar arquitectura, instalación y pruebas"
+
+## Alcance
+scope:
+  security:
+    - "Entorno controlado y aislado"
+    - "Ataques simulados solo con fines educativos"
+    - "Comunicación cifrada entre componentes"
+  
+  features:
+    - "Recolección centralizada de logs"
+    - "Análisis de eventos en tiempo real"
+    - "Alertas automáticas por severidad"
+    - "Dashboards temáticos"
+    - "Detección de anomalías"
+  
+  optional:
+    - "Integración con Suricata/Snort"
+    - "Integración con Telegram/Slack"
+    - "Cluster de Elasticsearch"
+    - "Alta disponibilidad"
+
+## Configuración de Alertas
+alerts:
+  levels:
+    - level: 1-4
+      severity: "Low"
+      action: "Log"
+    
+    - level: 5-7
+      severity: "Medium"
+      action: "Log + Dashboard"
+    
+    - level: 8-11
+      severity: "High"
+      action: "Log + Email"
+    
+    - level: 12-15
+      severity: "Critical"
+      action: "Log + Telegram + Active Response"
+  
+  types:
+    - "Autenticación (fuerza bruta, cambios de usuario)"
+    - "Integridad de archivos (FIM)"
+    - "Cambios de sistema (software, configuración)"
+    - "Detección de malware"
+    - "Eventos de red"
+    - "Violaciones de seguridad"
+
+## Métricas de Éxito
+success_metrics:
+  - "Todos los agentes conectados y monitorizando"
+  - "Alertas detectadas dentro de 1 minuto"
+  - "Dashboards funcionales con datos en tiempo real"
+  - "100% de eventos simulados detectados"
+  - "Documentación completa y accesible"
+  - "Demostración funcional del SOC"
+
+## Contacto y Soporte
+support:
+  documentation: "/docs"
+  scripts: "/scripts"
+  issues: "GitHub Issues"
+  authors_contact: "Ver README.md"
+
+## Configuración Recomendada
+recommended_settings:
+  elasticsearch:
+    heap_size: "8g"
+    refresh_interval: "30s"
+  
+  logstash:
+    batch_size: 1000
+    batch_delay: 5
+  
+  kibana:
+    session_timeout: "60m"
+    log_level: "info"
+  
+  wazuh:
+    alerts_level: 0
+    email_notification: true
+    format: "json"
+
+## Licencia
+license: "MIT"
+authors: "Antonio Marinero, Santiago Quirós, Mario Palacios"
+year: 2025
+
+---
+
+Configuración generada: Mayo 2026
