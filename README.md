@@ -15,3 +15,16 @@ Aquí iremos actualizando el estado del proyecto y documentando.
 - Actividades guiadas: [Actividades propuestas para el alumnaaçdo](actividades_practicas_ataque_simulado_y_analisis_soc.md)
 - Actividades desde 0 para el alumnado: [Actividades propuestas para el alumnado desde 0](actividades.md)
 
+
+# Documentación Definitiva
+
+[Link directorio](README.md)
+
+- Esta a falta de revisar.
+- Falta subir scripts de ataques.
+- Faltan subir actividades para el alumnado.
+- (Borrar un archivo de arquitectura).
+- Crear la wifi en el repositorio ¿Resumen.md?
+- Documentación del bot de telegram.
+- Linkear archivos entre si en el principal.
+### - Falta el canva.....
